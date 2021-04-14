@@ -9,6 +9,10 @@ The intention of this node is to give you a better overview of the messages that
 npm install node-red-contrib-display-property
 ```
 
+## Example
+![grafik](https://user-images.githubusercontent.com/80790340/114729085-f42ca880-9d3f-11eb-9779-6af19e969131.png)
+
+
 ## Getting Help
 
 A documentation is available in the help section of the node.
