@@ -1,0 +1,42 @@
+<script type="text/javascript">
+    RED.nodes.registerType('display property', {
+        category: 'common',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            property: {value:"msg.topic"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "font-awesome/fa-bookmark",
+        label: function() {
+            return this.name||"display property";
+        },
+    });
+</script>
+
+<script type="text/html" data-template-name="display property">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" style="width:70%;" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-arrow-right"></i> Property</label>
+        <input type="text" id="node-input-property" style="width:70%;" placeholder="msg.payload">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="display property">
+    <p>Shows the value of a message property that passes the node.</p>
+	<p>This node accepts any massage at the input and passes exactly the same massage to the output.</p>
+	<p>It can be configured to display the content of a certain property (default is <code>msg.payload</code>) of the message that passes the node. This content will be <b>displayed as the status</b> of the node.</p>
+	<h2>Property to display</h2>
+	<p>You can either provide the name of the property to display in the configuration of the node or pass the name of the property to display as <code>msg.property</code> to the node.</p>
+	<h3>Example</h3>
+	<p>To display the content of <code>msg.topic</code> you have two options:<p>
+	<p>1. Add <b>msg.topic</b> as the property in the configuration of the node, or<p>
+	<p>2. Pass a message with a property <code>msg.property</code> and the content <b>msg.topic</b> to the node.</p>
+	<p>Passing a <code>msg.property</code> message to the node will override the settings in the node-configuration</p>
+	<p>If you pass a msg.property with a content of a property that does not exist in the message, msg.payload will be displayed instead.</p>
+	<p>The intention of this node is to give you a better overview of the messages that pass your flows and support you debugging your flows by easily displaying the content of massage properties.</p>
+</script>

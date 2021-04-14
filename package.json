@@ -1,0 +1,21 @@
+{
+  "name": "node-red-contrib-display-property",
+  "version": "0.0.1",
+  "description": "A simple node that displays as its status the value of a message property that passes the node.",
+  "dependencies": {},
+  "main": "display-property.js",
+  "author": "Peter Hahn <peter.hahn@zwettl.cc>",
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "display-property": "display-property.js"
+    }
+  },
+  "keywords": [
+    "node-red",
+	"property",
+	"debug",
+	"display",
+	"status"
+  ]
+}
