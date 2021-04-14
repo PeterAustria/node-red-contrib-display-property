@@ -1,3 +1,6 @@
+
+[![npm](https://img.shields.io/npm/v/node-red-contrib-display-property.svg)](https://www.npmjs.com/package/node-red-contrib-display-property) [![downloads](https://img.shields.io/npm/dt/node-red-contrib-display-property.svg)](https://www.npmjs.com/package/node-red-contrib-display-property)
+
 # node-red-contirb-display-property
 
 A simple node that displays as its status the value of a message property that passes the node.
