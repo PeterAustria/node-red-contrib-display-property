@@ -8,6 +8,7 @@ The intention of this node is to give you a better overview of the messages that
 
 ## Quick Start
 
+Install from your <b>Node-RED Manage Palette</b> or using npm:
 ```
 npm install node-red-contrib-display-property
 ```
@@ -22,3 +23,7 @@ npm install node-red-contrib-display-property
 ## Getting Help
 
 A documentation is available in the help section of the node.
+
+## Bugs and feature requests
+
+Please report any issues or enhancement requests at <a href="https://github.com/PeterAustria/node-red-contrib-display-property/issues">GitHub</a>.
