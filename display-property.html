@@ -4,7 +4,9 @@
         color: '#a6bbcf',
         defaults: {
             name: {value:""},
-            property: {value:"msg.topic"}
+            property: {value:"msg.topic"},
+            showDate: {value: 0, required : true},
+            showTime: {value: 0, required : true}
         },
         inputs:1,
         outputs:1,
@@ -12,6 +14,7 @@
         label: function() {
             return this.name||"display property";
         },
+        paletteLabel: 'display prop.'
     });
 </script>
 
@@ -21,13 +24,21 @@
         <input type="text" id="node-input-name" style="width:70%;" placeholder="Name">
     </div>
     <div class="form-row">
-        <label for="node-input-name"><i class="fa fa-arrow-right"></i> Property</label>
+        <label for="node-input-property"><i class="fa fa-arrow-right"></i> Property</label>
         <input type="text" id="node-input-property" style="width:70%;" placeholder="msg.payload">
+    </div>
+    <div class="form-row">
+        <label for="node-input-showDate"><i class="fa fa-calendar"></i> Show Date</label>
+        <input type="checkbox" id="node-input-showDate" value=1>
+    </div>
+    <div class="form-row">
+        <label for="node-input-showTime"><i class="fa fa-clock-o"></i> Show Time</label>
+        <input type="checkbox" id="node-input-showTime" value=0>
     </div>
 </script>
 
 <script type="text/x-red" data-help-name="display property">
-    <p>Shows the value of a message property that passes the node.</p>
+    <p>Shows the value of a message property that passes the node. Optional it also shows the date and/other the time, when the message passed the node. </p>
 	<p>This node accepts any massage at the input and passes exactly the same massage to the output.</p>
 	<p>It can be configured to display the content of a certain property (default is <code>msg.payload</code>) of the message that passes the node. This content will be <b>displayed as the status</b> of the node.</p>
 	<h2>Property to display</h2>

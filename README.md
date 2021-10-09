@@ -4,6 +4,7 @@
 # node-red-contirb-display-property
 
 A simple node that displays as its status the value of a message property that passes the node.
+Optional it can be configured to also show the daten and/or the time when the message passed.
 The intention of this node is to give you a better overview of the messages that pass your flows and support you debugging your flows by easily displaying the content of massage properties.
 
 ## Quick Start
@@ -24,7 +25,7 @@ npm install node-red-contrib-display-property
 
 This documentation is also available in the help section of the node.
 This node accepts any massage at the input and passes exactly the same massage to the output.
-It can be configured to display the content of a certain property (default is <code>msg.payload</code>) of the message that passes the node. This content will be <b>displayed as the status</b> of the node.
+It can be configured to display the content of a certain property (default is <code>msg.payload</code>) of the message that passes the node. This content will be <b>displayed as the status</b> of the node along the the daten and/or time when it passed.
 My intention for creating this little node was to get a better overview of what values running throug my nodes without the need to put debug nodes everywhere. So this can also be handy for debugging your flows by displaying the content of massages property.
 
 #### Two options to display the value of a property:
