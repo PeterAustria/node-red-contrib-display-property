@@ -1,5 +1,8 @@
 
-[![npm](https://img.shields.io/npm/v/node-red-contrib-display-property.svg)](https://www.npmjs.com/package/node-red-contrib-display-property) [![downloads](https://img.shields.io/npm/dt/node-red-contrib-display-property.svg)](https://www.npmjs.com/package/node-red-contrib-display-property)
+[![platform](https://img.shields.io/badge/platform-Node--RED-red)](https://nodered.org)
+[![npm](https://img.shields.io/npm/v/node-red-contrib-display-property.svg)](https://www.npmjs.com/package/node-red-contrib-display-property)
+[![downloads](https://img.shields.io/npm/dt/node-red-contrib-display-property.svg)](https://www.npmjs.com/package/node-red-contrib-display-property)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vivereSmartGroup/node-red-contrib-display-property/master/LICENSE)
 
 # node-red-contirb-display-property
 
